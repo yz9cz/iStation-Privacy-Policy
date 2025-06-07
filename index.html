@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية - iStation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+      color: #111827;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.02);
+      background-color: #f9fafb;
+      border-radius: 8px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #1f2937;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #3b82f6;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+      cursor: pointer;
+    }
+
+    .collapsed p {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>سياسة الخصوصية لبوت iStation</h1>
+    <p>آخر تحديث: 7 يونيو 2025</p>
+  </header>
+  <main>
+    <section>
+      <h2 onclick="toggleSection(this)">1. المعلومات التي نقوم بجمعها</h2>
+      <p>
+        نقوم بجمع معرف المستخدم، الاسم الأول، تفاصيل الطلبات، ووقت الاستخدام. لا نقوم بجمع معلومات حساسة مثل كلمات المرور أو بيانات مالية.
+      </p>
+    </section>
+    <section>
+      <h2 onclick="toggleSection(this)">2. كيفية استخدام المعلومات</h2>
+      <p>
+        نستخدم المعلومات لتنفيذ الطلبات، تحسين الخدمة، متابعة حالة الطلبات، والتواصل عند الحاجة.
+      </p>
+    </section>
+    <section>
+      <h2 onclick="toggleSection(this)">3. حماية البيانات</h2>
+      <p>
+        نتخذ تدابير أمنية لحماية بياناتك، ولكننا غير مسؤولين عن أي اختراق ناتج عن أطراف خارجية أو أعطال خارج سيطرتنا.
+      </p>
+    </section>
+    <section>
+      <h2 onclick="toggleSection(this)">4. مشاركة البيانات</h2>
+      <p>
+        لا نشارك بياناتك إلا إذا طُلب ذلك قانونياً، أو لمعالجة مشكلات الطلب، أو مع موظفي الخدمة المعتمدين.
+      </p>
+    </section>
+    <section>
+      <h2 onclick="toggleSection(this)">5. حقوق المستخدم</h2>
+      <p>
+        لك الحق في معرفة بياناتك، طلب تعديلها أو حذفها، والتوقف عن استخدام البوت في أي وقت. حذف البيانات يعني فقدان سجل الطلبات.
+      </p>
+    </section>
+    <section>
+      <h2 onclick="toggleSection(this)">6. حدود المسؤولية</h2>
+      <p>
+        نحن غير مسؤولين عن الأخطاء الناتجة عن معلومات غير صحيحة، أو طلبات ناقصة، ونحتفظ بحق رفض أي طلب مشبوه.
+      </p>
+    </section>
+    <section>
+      <h2 onclick="toggleSection(this)">7. تعديل السياسة</h2>
+      <p>
+        يمكننا تعديل هذه السياسة في أي وقت دون إشعار مسبق. التعديلات تُطبق فور نشرها.
+      </p>
+    </section>
+    <section>
+      <h2 onclick="toggleSection(this)">8. التواصل</h2>
+      <p>
+        يمكنك التواصل معنا عبر البوت أو وسائل الاتصال الرسمية للاستفسارات أو تعديل البيانات.
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 iStation. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    function toggleSection(header) {
+      const section = header.parentElement;
+      section.classList.toggle('collapsed');
+    }
+  </script>
+</body>
+</html>
